@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="tipcs.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container container-small">
+    <!-- Bill amount -->
+    <h4 style="text-align:center; border:solid; border-color: #6f6fff;">TIP CALCULATOR</h4>
+    <h6>How much was your bill?</h6>
+    <div class="input-group mb-3 input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
+        <!-- <span class="input-group-text">0.00</span> -->
+      </div>
+      <input type="text" id="suma" class="form-control" aria-label="Amount (to the nearest dollar)">
+    </div>
+    <!-- Service feedback -->
+    <h6>How was your service?</h6>
+    <div class="input-group mb-3 input-group-sm">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select custom-select-sm" id="inputGroupSelect01">
+        <option disabled selected value="0">Choose...</option>
+        <option value="0.05">5&#37; &#45; Not that good</option>
+        <option value="0.1">10&#37; &#45; Not to bad</option>
+        <option value="0.2">20&#37; &#45; Good</option>
+        <option value="0.3">30&#37; &#45; Very Good</option>
+      </select>
+    </div>
+    <!-- Number of people sharing the amoumt -->
+    <h6>How many people shared the bill?</h6>
+    <div class="input-group input-group-sm mb-3">
+      <input type="text" id="numarp" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">People</span>
+      </div>
+    </div>
+    <button type="button" id="calculate" class="btn btn-primary btn-lg btn-block">CALCULATE</button>
+    <!-- Results can be seen here -->
+    <div id="totTip" , style="text-align:center;">
+      <sup>$</sup>
+      <span id="tip">0.00</span>
+      <small id="fiecare">fiecare</small>
+    </div>
+  </div>
+  <script src="calculeazatips.js" type="text/javascript"></script>
+</body>
+
+</html>
